@@ -5,4 +5,3 @@ Hi, you
 🟢Nile Red Lab Sim
 
 > [Buy me a Coffe](https://www.buymeacoffee.com/lukdev)
-- Lukdev
