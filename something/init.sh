@@ -1,6 +1,7 @@
+rm -rf ./sample_data
 rm -rf ./system
 rm -rf ./inventory.ini
-rm -rf ./playbook.ini
+rm -rf ./playbook.yaml
 mkdir ./system
 touch ./system/wget.txt
 touch ./system/pip_install.txt
