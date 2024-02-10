@@ -1,6 +1,8 @@
 rm -rf ./sample_data
 rm -rf ./system
 rm -rf ./ansible_quickstart
+mkdir ./system
+touch ./system/wget.txt
 wget https://lukdev.org/something/requirements.txt -P ./system -a ./system/wget.txt
 touch ./system/pip_install.txt
 pip install -r ./system/requirements.txt > ./system/pip_install.txt
