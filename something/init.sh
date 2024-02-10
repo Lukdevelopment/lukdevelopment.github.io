@@ -6,5 +6,6 @@ touch ./system/wget.txt
 wget https://lukdev.org/something/requirements.txt -P ./system -a ./system/wget.txt
 touch ./system/pip_install.txt
 pip install -r ./system/requirements.txt > ./system/pip_install.txt
-wget https://lukdev.org/something/inventory.ini -P ./ansible_quickstart -a ./system/wget.txt
-ansible all -m ping -i ./ansible_quickstart/inventory.ini
+wget https://lukdev.org/something/inventory.ini -P ./ansible -a ./system/wget.txt
+wget https://lukdev.org/something/playbook.yaml -P ./ansible -a ./system/wget.txt
+ansible-playbook -i ./ansible/inventory.ini playbook.yaml
