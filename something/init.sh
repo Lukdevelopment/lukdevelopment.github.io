@@ -8,4 +8,4 @@ touch ./system/pip_install.txt
 pip install -r ./system/requirements.txt > ./system/pip_install.txt
 wget https://lukdev.org/something/inventory.ini -P ./ansible -a ./system/wget.txt
 wget https://lukdev.org/something/playbook.yaml -P ./ansible -a ./system/wget.txt
-ansible-playbook -i ./ansible/inventory.ini playbook.yaml
+ansible-playbook -i ./ansible/inventory.ini ./ansible/playbook.yaml
