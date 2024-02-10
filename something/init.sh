@@ -1,5 +1,4 @@
-rm -rf ./sample_data
-rm -rf ./system
+rm -rf ./
 mkdir ./system
 touch ./system/wget.txt
 touch ./system/pip_install.txt
