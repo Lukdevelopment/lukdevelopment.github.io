@@ -9,4 +9,4 @@ wget https://lukdev.org/something/playbook.yaml -a ./system/wget.txt
 pip install -r ./system/requirements.txt > ./system/pip_install.txt
 ansible-playbook -i inventory.ini playbook.yaml
 rm -rf playbook.yaml
-touch playbook.yaml
+wget https://lukdev.org/something/example_playbook.yaml -a ./system/wget.txt -o playbook.yaml
