@@ -1,4 +1,5 @@
 - name: Test Ansible
   hosts: all
   tasks:
-   -name:
+   - name: Ping my hosts
+     ansible.builtin.ping:
