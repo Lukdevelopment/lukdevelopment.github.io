@@ -1,0 +1,4 @@
+- name: Test Ansible
+  hosts: all
+  tasks:
+   -name:
