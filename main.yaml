@@ -1,13 +1,16 @@
-- name: Install standart
+- name: APT update & clean
   hosts: all
   tasks:
-   - name: Ping my hosts
+   - name: Ping hosts
      ansible.builtin.ping:
    - name: Run update_cache
      ansible.builtin.apt:
        update_cache: yes
        cache_valid_time: 3600
-   - name: Install wget
+   - name: APT Auto remove
      ansible.builtin.apt:
-       name: wget
-       state: present
+       autoremove: yes
+       purge: true
+   - name: APT Clean
+     apt:
+       clean: yes
