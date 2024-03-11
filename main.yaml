@@ -3,10 +3,6 @@
   tasks:
    - name: Ping my hosts
      ansible.builtin.ping:
-   - name: APT Update
-     ansible.builtin.apt:
-       name: "*"
-       state: latest
    - name: Run update_cache
      ansible.builtin.apt:
        update_cache: yes
