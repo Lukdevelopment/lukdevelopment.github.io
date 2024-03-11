@@ -7,10 +7,10 @@
      ansible.builtin.apt:
        name: "*"
        state: latest
-   - name: Run "update_cache=yes"
+   - name: Run update_cache
      ansible.builtin.apt:
-     update_cache: yes
-     cache_valid_time: 3600
+       update_cache: yes
+       cache_valid_time: 3600
    - name: Install wget
      ansible.builtin.apt:
        name: wget
