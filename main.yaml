@@ -1,0 +1,17 @@
+- name: Install standart
+  hosts: all
+  tasks:
+   - name: Ping my hosts
+     ansible.builtin.ping:
+   - name: APT Update
+     ansible.builtin.apt:
+       name: "*"
+       state: latest
+   - name: Run "update_cache=yes"
+     ansible.builtin.apt:
+     update_cache: yes
+     cache_valid_time: 3600
+   - name: Install wget
+     ansible.builtin.apt:
+       name: wget
+       state: present
